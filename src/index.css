@@ -1,0 +1,58 @@
+@font-face {
+  font-family: clash-display-light;
+  src: url('/fonts/ClashDisplay-Light.otf');
+}
+@font-face {
+  font-family: clash-display-bold;
+  src: url('/fonts/ClashDisplay-Bold.otf');
+}
+@font-face {
+  font-family: Clash-Grotesk-semibold;
+  src: url('/fonts/ClashGrotesk-Semibold.otf');
+}
+@font-face {
+  font-family: montserrat-light;
+  src: url('/fonts/Montserrat-Light.ttf');
+}
+h1{
+  font-size: 26px;
+  font-weight: 700;
+  font-family: clash-display-bold;
+}
+h2{
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+  letter-spacing: 1.2px;
+  font-family: Clash-Grotesk-semibold;
+}
+p{
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  font-family:montserrat-light;
+}
+span{
+  font-size: 12.5px;
+ 
+  font-family:clash-display-light;
+  color: rgb(172, 171, 171);
+}
+
+
+:root {
+  margin: 0;
+  padding: 0;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
