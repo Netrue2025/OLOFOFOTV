@@ -1,0 +1,37 @@
+.sportContainer {
+  width: 90dvw;
+  height: auto;
+  padding: 55px 0;
+}
+.sportContainer .sportTitle {
+  width: 100%;
+  display: flex;
+  margin-left: 2.5%;
+  justify-content: space-between;
+}
+.sportContainer .sportTitle h2 {
+  color: #ffffff;
+}
+.sportContainer .sportCards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 22px;
+}
+.sportContainer .sportCards .card1, .sportContainer .sportCards .card2, .sportContainer .sportCards .card3 {
+  width: 186px;
+  height: 312px;
+  margin: 0 10px;
+}
+.sportContainer .sportCards .card1 img, .sportContainer .sportCards .card2 img, .sportContainer .sportCards .card3 img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+.sportContainer .sportCards .card1 h2, .sportContainer .sportCards .card1 p, .sportContainer .sportCards .card2 h2, .sportContainer .sportCards .card2 p, .sportContainer .sportCards .card3 h2, .sportContainer .sportCards .card3 p {
+  width: 100%;
+  color: #ffffff;
+}
+.sportContainer .sportCards .card1 p, .sportContainer .sportCards .card2 p, .sportContainer .sportCards .card3 p {
+  color: gray;
+}/*# sourceMappingURL=sport.css.map */
