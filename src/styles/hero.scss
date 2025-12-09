@@ -2,6 +2,9 @@
     width: 90dvw;
     margin:22px auto;
     padding: 0;
+    padding-bottom: 22px;
+    background-color: #161616;
+    border-radius: 12px;
 
     figure{
         width: 100%;
@@ -22,15 +25,16 @@
         line-height: 1.5;
         color: #ffffff;
         margin-top: 22px;
+        margin-left: 15px;
         
 
         button{
             margin-top: 14px;
             width: 85px;
-            height: 28px;
+            height: 32px;
             color: #ffffff;
             border: none;
-            border-radius: 2px;
+            border-radius: 4px;
             cursor: pointer;
             background-color: rgb(23, 98, 248);
 
