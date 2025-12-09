@@ -2,36 +2,51 @@
   width: 90dvw;
   height: auto;
   padding: 55px 0;
+  margin: auto;
+  overflow-x: none;
 }
 .sportContainer .sportTitle {
   width: 100%;
   display: flex;
-  margin-left: 2.5%;
   justify-content: space-between;
 }
 .sportContainer .sportTitle h2 {
   color: #ffffff;
 }
+.sportContainer .sportTitle .link span {
+  color: rgb(129, 129, 255);
+  text-decoration: none;
+}
 .sportContainer .sportCards {
   display: flex;
   flex-direction: row;
-  width: 100%;
   margin-top: 22px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 360px;
 }
-.sportContainer .sportCards .card1, .sportContainer .sportCards .card2, .sportContainer .sportCards .card3 {
-  width: 186px;
+.sportContainer .sportCards .card1, .sportContainer .sportCards .card2, .sportContainer .sportCards .card3, .sportContainer .sportCards .card4, .sportContainer .sportCards .card5,
+.sportContainer .sportCards .card6, .sportContainer .sportCards .card7, .sportContainer .sportCards .card8 {
+  min-width: 200px;
   height: 312px;
-  margin: 0 10px;
+  margin-right: 10px;
 }
-.sportContainer .sportCards .card1 img, .sportContainer .sportCards .card2 img, .sportContainer .sportCards .card3 img {
+.sportContainer .sportCards .card1 img, .sportContainer .sportCards .card2 img, .sportContainer .sportCards .card3 img, .sportContainer .sportCards .card4 img, .sportContainer .sportCards .card5 img,
+.sportContainer .sportCards .card6 img, .sportContainer .sportCards .card7 img, .sportContainer .sportCards .card8 img {
   width: 100%;
   height: 80%;
   border-radius: 10px;
 }
-.sportContainer .sportCards .card1 h2, .sportContainer .sportCards .card1 p, .sportContainer .sportCards .card2 h2, .sportContainer .sportCards .card2 p, .sportContainer .sportCards .card3 h2, .sportContainer .sportCards .card3 p {
+.sportContainer .sportCards .card1 h2, .sportContainer .sportCards .card1 p, .sportContainer .sportCards .card2 h2, .sportContainer .sportCards .card2 p, .sportContainer .sportCards .card3 h2, .sportContainer .sportCards .card3 p, .sportContainer .sportCards .card4 h2, .sportContainer .sportCards .card4 p, .sportContainer .sportCards .card5 h2, .sportContainer .sportCards .card5 p,
+.sportContainer .sportCards .card6 h2,
+.sportContainer .sportCards .card6 p, .sportContainer .sportCards .card7 h2, .sportContainer .sportCards .card7 p, .sportContainer .sportCards .card8 h2, .sportContainer .sportCards .card8 p {
   width: 100%;
   color: #ffffff;
 }
-.sportContainer .sportCards .card1 p, .sportContainer .sportCards .card2 p, .sportContainer .sportCards .card3 p {
+.sportContainer .sportCards .card1 p, .sportContainer .sportCards .card2 p, .sportContainer .sportCards .card3 p, .sportContainer .sportCards .card4 p, .sportContainer .sportCards .card5 p,
+.sportContainer .sportCards .card6 p, .sportContainer .sportCards .card7 p, .sportContainer .sportCards .card8 p {
   color: gray;
+}
+.sportContainer .sportCards::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=sport.css.map */

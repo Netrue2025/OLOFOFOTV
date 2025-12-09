@@ -7,7 +7,7 @@ export function Sport(){
             <section className="sportContainer">
                 <div className="sportTitle">
                     <h2>Latest in Sport</h2>
-                    <Link to={"/"}>
+                    <Link to={"/"} className="link">
                         <span>See All</span>
                     </Link>
                 </div>
@@ -27,6 +27,32 @@ export function Sport(){
                         <h2>Grand Slam Final: A Historic Match</h2>
                         <p>Tennis Updates</p>
                     </div>
+                    <div className="card4">
+                        <img src="/sport3.jpg" alt="person playing basket ball" />
+                        <h2>Grand Slam Final: A Historic Match</h2>
+                        <p>Tennis Updates</p>
+                    </div>
+                    <div className="card5">
+                        <img src="/sport3.jpg" alt="person playing basket ball" />
+                        <h2>Grand Slam Final: A Historic Match</h2>
+                        <p>Tennis Updates</p>
+                    </div>
+                    <div className="card6">
+                        <img src="/sport3.jpg" alt="person playing basket ball" />
+                        <h2>Grand Slam Final: A Historic Match</h2>
+                        <p>Tennis Updates</p>
+                    </div>
+                    <div className="card7">
+                        <img src="/sport3.jpg" alt="person playing basket ball" />
+                        <h2>Grand Slam Final: A Historic Match</h2>
+                        <p>Tennis Updates</p>
+                    </div>
+                    <div className="card8">
+                        <img src="/sport3.jpg" alt="person playing basket ball" />
+                        <h2>Grand Slam Final: A Historic Match</h2>
+                        <p>Tennis Updates</p>
+                    </div>
+
                 </div>
             </section>
         </>

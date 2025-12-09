@@ -2,28 +2,41 @@
     width: 90dvw;
     height: auto;
     padding: 55px 0;
+    margin: auto;
+    overflow-x: none;
 
     .sportTitle{
         width: 100%;
         display: flex;
-        margin-left: 2.5%;
         justify-content: space-between;
+        
 
         h2{
             color: #ffffff;
+        }
+        .link span{
+            color: rgb(129, 129, 255);
+            text-decoration: none;
         }
     }
     .sportCards{
         display: flex;
         flex-direction: row;
-        width: 100%;
+        // max-width: 90dvw;
         margin-top: 22px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 360px;
+      
 
 
-        .card1, .card2, .card3{
-            width: 186px;
+
+        .card1, .card2, .card3, .card4, .card5,
+        .card6, .card7, .card8{
+            min-width: 200px;
             height: 312px;
-            margin: 0 10px;
+            margin-right: 10px;
+            
 
             img{
                 width: 100%;
@@ -39,4 +52,7 @@
             }
         }
     }
+     .sportCards::-webkit-scrollbar{
+        display: none;
+     }
 }
