@@ -6,7 +6,7 @@ export function Sport(){
         <>
             <section className="sportContainer">
                 <div className="sportTitle">
-                    <h2>Latest in Sport</h2>
+                    <h1>Latest in Sport</h1>
                     <Link to={"/"} className="link">
                         <span>See All</span>
                     </Link>

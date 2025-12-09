@@ -17,12 +17,14 @@
 h1{
   font-size: 26px;
   font-weight: 700;
+  word-spacing: 2.5px;
   font-family: clash-display-bold;
 }
 h2{
   font-weight: 500;
   font-size: 18px;
   margin: 0;
+  color: #ffffff;
   letter-spacing: 1.2px;
   font-family: Clash-Grotesk-semibold;
 }
@@ -30,6 +32,7 @@ p{
   font-weight: 400;
   font-size: 14px;
   margin: 0;
+  color: #bdbdbd;
   font-family:montserrat-light;
 }
 span{

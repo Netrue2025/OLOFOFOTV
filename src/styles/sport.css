@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
 }
-.sportContainer .sportTitle h2 {
+.sportContainer .sportTitle h1 {
   color: #ffffff;
 }
 .sportContainer .sportTitle .link span {
@@ -37,15 +37,10 @@
   height: 80%;
   border-radius: 10px;
 }
-.sportContainer .sportCards .card1 h2, .sportContainer .sportCards .card1 p, .sportContainer .sportCards .card2 h2, .sportContainer .sportCards .card2 p, .sportContainer .sportCards .card3 h2, .sportContainer .sportCards .card3 p, .sportContainer .sportCards .card4 h2, .sportContainer .sportCards .card4 p, .sportContainer .sportCards .card5 h2, .sportContainer .sportCards .card5 p,
-.sportContainer .sportCards .card6 h2,
-.sportContainer .sportCards .card6 p, .sportContainer .sportCards .card7 h2, .sportContainer .sportCards .card7 p, .sportContainer .sportCards .card8 h2, .sportContainer .sportCards .card8 p {
+.sportContainer .sportCards .card1 h2, .sportContainer .sportCards .card2 h2, .sportContainer .sportCards .card3 h2, .sportContainer .sportCards .card4 h2, .sportContainer .sportCards .card5 h2,
+.sportContainer .sportCards .card6 h2, .sportContainer .sportCards .card7 h2, .sportContainer .sportCards .card8 h2 {
   width: 100%;
   color: #ffffff;
-}
-.sportContainer .sportCards .card1 p, .sportContainer .sportCards .card2 p, .sportContainer .sportCards .card3 p, .sportContainer .sportCards .card4 p, .sportContainer .sportCards .card5 p,
-.sportContainer .sportCards .card6 p, .sportContainer .sportCards .card7 p, .sportContainer .sportCards .card8 p {
-  color: gray;
 }
 .sportContainer .sportCards::-webkit-scrollbar {
   display: none;
