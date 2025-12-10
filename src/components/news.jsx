@@ -1,11 +1,11 @@
 import "../styles/sport.css"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react"
 
 export function News(){
     const [loading, setLoading] = useState(true)
     const [backend, setBackend] = useState("");
-  
+    const navigate = useNavigate();
 
         useEffect(()=>{
             fetch("https://abiwrite.com/db/news.php")
@@ -41,10 +41,10 @@ export function News(){
                     </Link>
                 </div>
                 <div className="sportCards">
-                    {alldata.slice(0, 10).map((sport, index)=>(
-                    <div className="card1" key={index}>
-                        <img src={`https://abiwrite.com/admin/images/${sport.image}`} alt="person playing basket ball" />
-                        <h2>{sport.heading}</h2>
+                    {alldata.slice(0, 10).map((news, index)=>(
+                    <div className="card1" key={index}  onClick={()=>navigate('/Read', {replace: true, state:(news)})}>
+                        <img src={`https://abiwrite.com/admin/images/${news.image}`} alt="person playing basket ball" />
+                        <h2>{news.heading}</h2>
                         <p>News</p>
                     </div>
                     ))}
