@@ -1,4 +1,5 @@
 import "../styles/blog.css"
+import { Link } from "react-router-dom"
 
 export function Blog(){
     return(
@@ -25,16 +26,21 @@ export function Blog(){
                         <span>Health & Wellness • 8 min read</span>
                     </div>
                 </article>
+                <Link className="link" to="/Read">
                 <article>
-                    <figure>
-                        <img src="/blogimage3.webp" alt="Image of a woman" />
-                    </figure>
-                    <div className="articleContent">
-                        <h2>Mindfulness in a Digital Age</h2>
-                        <p>Find calm and focus in a world of constant notifications and distractions.</p>
-                        <span>Mindfulness • 6 min read</span>
-                    </div>
+                  
+                        <figure>
+                            <img src="/blogimage3.webp" alt="Image of a woman" />
+                        </figure>
+                        <div className="articleContent">
+                            <h2>Mindfulness in a Digital Age</h2>
+                            <p>Find calm and focus in a world of constant notifications and distractions.</p>
+                            <span>Mindfulness • 6 min read</span>
+                        </div>
+                    
+
                 </article>
+                </Link>
             </section>
             
         </div>

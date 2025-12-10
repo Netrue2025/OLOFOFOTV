@@ -1,53 +1,52 @@
 import "../styles/sport.css"
-import { Link, useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { useState, useEffect } from "react"
 
-export function Sport(){
+export function News(){
     const [loading, setLoading] = useState(true)
     const [backend, setBackend] = useState("");
-    const [testing, setTesting] = useState('Welcome Jeremiah')
-    const navigate = useNavigate();
+  
 
-    useEffect(()=>{
-        fetch("https://abiwrite.com/db/sport.php")
-        .then((response)=>{
-            if(!response.ok){
-                throw new Error("Server lost. check your server connection")
-            }
-            return response.json();
-        })
-        .then((data)=>{
-            
-            setBackend(data)
-            console.log(data.heading)
-            setLoading(false)
-            
-        })
-        .catch((error)=>{
-            // setError(error.Messages)
-            setLoading(false)
-        })
-    
-    }, [])
-    const alldata = Array.from(backend)
+        useEffect(()=>{
+            fetch("https://abiwrite.com/db/news.php")
+            .then((response)=>{
+                if(!response.ok){
+                    throw new Error("Server lost. check your server connection")
+                }
+                return response.json();
+            })
+            .then((data)=>{
+                
+                setBackend(data)
+                console.log(data.heading)
+                setLoading(false)
+                
+            })
+            .catch((error)=>{
+                // setError(error.Messages)
+                setLoading(false)
+            })
+        
+        }, [])
+        const alldata = Array.from(backend)
    
     return(
         <>
 
             <section className="sportContainer">
                 <div className="sportTitle">
-                    <h1>Latest in Sport</h1>
+                    <h1>General News</h1>
                     <Link to={"/"} className="link">
                         <span>See All</span>
                     </Link>
                 </div>
                 <div className="sportCards">
                     {alldata.slice(0, 10).map((sport, index)=>(
-                        <div className="card1" key={index} onClick={()=>navigate('/Read', {replace: true, state:(sport)})}>
-                            <img src={`https://abiwrite.com/admin/images/${sport.image}`} alt="person playing basket ball" />
-                            <h2>{sport.heading}</h2>
-                            <p>{sport.categories}</p>
-                        </div>
+                    <div className="card1" key={index}>
+                        <img src={`https://abiwrite.com/admin/images/${sport.image}`} alt="person playing basket ball" />
+                        <h2>{sport.heading}</h2>
+                        <p>News</p>
+                    </div>
                     ))}
                     {/* <div className="card2">
                         <img src="/sport2.jpg" alt="person playing basket ball" />

@@ -1,4 +1,5 @@
 import "../styles/topnavbar.css"
+import { CiSearch } from "react-icons/ci";
 
 export function Topnavbar(){
     return(
@@ -7,11 +8,11 @@ export function Topnavbar(){
                 <nav>
                     <figure>
                         {/* <img src="/darkicon.png" alt="dark Mode icon" /> */}
-                        <img src="/OLOFOFOLOGO.png" alt="" />
+                        <img src="/OLOFOFO.png" alt="" />
                     </figure>
 
                     <h1>NewsFeed</h1>
-                    <img src="/searchicon.webp" alt="Search Icon" />
+                    <CiSearch className="searchIcon"/>
                 </nav>
             </header>
         </div>

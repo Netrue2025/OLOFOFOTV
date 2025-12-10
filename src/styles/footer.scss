@@ -1,0 +1,102 @@
+.footer-container{
+    margin-top: 55px;
+    height: auto;
+    border-top: 4px solid rgba(29, 29, 41, 0.37);
+    padding-top: 15px;
+    .footer-inset-container{
+        height: auto;
+        .mainFooter{
+            max-width: 100dvw;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            .socialMedia{
+                display: flex;
+                flex-shrink: unset;
+                flex-direction: column;
+                line-height: 1;
+                .facebook, .instagram, .tiktok, .youtube{
+                    display: flex;
+                    height: auto;
+                    margin: 0;
+                    color: #888787;
+                    cursor: pointer;
+                    .icon{
+                        margin:auto 10px;
+                    }
+                }
+                .sm:hover{
+                    color: rgb(118, 118, 223);
+                }
+            }
+            .quickLink{
+                display: flex;
+                flex-direction: column;
+                .quickSpan{
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 2;
+                    .link{
+                        text-decoration: none;
+                        span:hover{
+                            color: rgb(118, 118, 223);
+                        }
+                    }
+                    .link:last-child{
+                        background-color: rgb(58, 1, 58);
+                        padding: 5px;
+                        word-spacing: 4px;
+                        border-radius: 5px;
+                        box-shadow: 1px 2px gray;
+                        
+                        span{
+                            font-weight: 600;
+                            color: #ffffff;
+                        }
+                    }
+                    .link:last-child:active{
+                        border: none;
+                        box-shadow: none;
+                    }
+
+                }
+            }
+        }
+        .others{
+            width: 90dvw;
+            height: auto; 
+            padding: 22px 0;  
+            border: 0.8px solid rgba(255, 255, 255, 0.2705882353);
+            border-style: dashed;
+            border-bottom: none;
+            border-right: none;
+            border-left: none;
+            margin: 0 auto;
+            .others-details{
+                width: 100%;
+                justify-content: space-between;
+                display: flex;
+                flex-wrap: wrap;
+
+                .terms-privacy-cookies{
+                    text-align: center;
+                    display: flex;
+                    .link{
+                        text-decoration: none;
+                        
+                    }
+                    span:hover{
+                        color: rgb(115, 151, 250);
+                    }
+                    span{
+                        margin-left: 16px;
+                      
+                    }
+                    
+                }
+            }
+        }
+    }
+}

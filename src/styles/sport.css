@@ -2,7 +2,7 @@
   width: 90dvw;
   height: auto;
   padding: 55px 0;
-  margin: auto;
+  margin: 0 auto;
   overflow-x: none;
 }
 .sportContainer .sportTitle {
@@ -13,9 +13,16 @@
 .sportContainer .sportTitle h1 {
   color: #ffffff;
 }
-.sportContainer .sportTitle .link span {
-  color: rgb(129, 129, 255);
+.sportContainer .sportTitle .link {
   text-decoration: none;
+  margin: auto 0;
+}
+.sportContainer .sportTitle .link span {
+  color: rgb(0, 153, 255);
+  font-size: 14px;
+}
+.sportContainer .sportTitle .link span:hover {
+  color: red;
 }
 .sportContainer .sportCards {
   display: flex;
@@ -23,24 +30,32 @@
   margin-top: 22px;
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 360px;
+  height: auto;
 }
 .sportContainer .sportCards .card1, .sportContainer .sportCards .card2, .sportContainer .sportCards .card3, .sportContainer .sportCards .card4, .sportContainer .sportCards .card5,
 .sportContainer .sportCards .card6, .sportContainer .sportCards .card7, .sportContainer .sportCards .card8 {
-  min-width: 200px;
-  height: 312px;
-  margin-right: 10px;
+  min-width: 242px;
+  max-height: 372px;
+  margin-right: 14px;
+  cursor: pointer;
 }
 .sportContainer .sportCards .card1 img, .sportContainer .sportCards .card2 img, .sportContainer .sportCards .card3 img, .sportContainer .sportCards .card4 img, .sportContainer .sportCards .card5 img,
 .sportContainer .sportCards .card6 img, .sportContainer .sportCards .card7 img, .sportContainer .sportCards .card8 img {
   width: 100%;
-  height: 80%;
+  height: 75%;
   border-radius: 10px;
 }
 .sportContainer .sportCards .card1 h2, .sportContainer .sportCards .card2 h2, .sportContainer .sportCards .card3 h2, .sportContainer .sportCards .card4 h2, .sportContainer .sportCards .card5 h2,
 .sportContainer .sportCards .card6 h2, .sportContainer .sportCards .card7 h2, .sportContainer .sportCards .card8 h2 {
   width: 100%;
+  max-height: 71px;
+  overflow: hidden;
   color: #ffffff;
+}
+.sportContainer .sportCards .card1:hover {
+  background-color: rgb(21, 20, 44);
+  margin: 0 10px;
+  border-radius: 5px;
 }
 .sportContainer .sportCards::-webkit-scrollbar {
   display: none;

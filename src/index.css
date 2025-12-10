@@ -41,6 +41,9 @@ span{
   font-family:clash-display-light;
   color: rgb(172, 171, 171);
 }
+.link{
+  text-decoration: none;
+}
 
 
 :root {

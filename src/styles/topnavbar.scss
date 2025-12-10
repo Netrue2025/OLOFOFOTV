@@ -35,11 +35,17 @@ header{
             width: 30%;
             margin: auto 0;
         }
-        img{
+        .searchIcon{
             width: 45px;
             height: 45px;
             margin: auto;
             margin-right: 0;
+            color: #ffffff;
+            cursor: pointer;
+            
+        }
+        .searchIcon:active{
+            color: rgb(201, 47, 0);
         }
     }
     

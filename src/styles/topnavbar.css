@@ -30,9 +30,14 @@ header nav h1 {
   width: 30%;
   margin: auto 0;
 }
-header nav img {
+header nav .searchIcon {
   width: 45px;
   height: 45px;
   margin: auto;
   margin-right: 0;
+  color: #ffffff;
+  cursor: pointer;
+}
+header nav .searchIcon:active {
+  color: rgb(201, 47, 0);
 }/*# sourceMappingURL=topnavbar.css.map */
