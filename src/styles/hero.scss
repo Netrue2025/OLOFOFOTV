@@ -1,23 +1,52 @@
 .heroContainer{
     width: 90dvw;
-    margin:0 auto;
+    margin:22px auto;
     padding: 0;
-    padding-bottom: 22px;
+    height: auto;
+    // padding-bottom: 22px;
     background-color: #161616;
     border-radius: 12px;
+    
 
-    figure{
+    .figure{
         width: 100%;
-        max-height: 90vh;
-        margin: 0 auto;
+        height: auto;
+        max-height: 50dvh;
+        margin:  auto;
+        display: flex;
+        background: linear-gradient(120deg, #17141d, #071732);
+        animation: gradientMove 4s ease infinite;
+        
+
 
         img{
-            width: 100%;
-            max-height: 90vh;
+            width: auto;
+            max-width: 90dvw;
+            max-height: 50dvh;
             border-radius: 10px;
-            margin: 0;
+            margin: auto;
+            // display: flex;
+            opacity: 0.8;
         }
+    
     }
+    // @keyframes gradientMove {
+    //     0%{
+    //         background-position: 0% 50%;
+    //         background: linear-gradient(120deg, #5b09b4, #0b60f3);
+    //     }
+    //     50%{
+    //         background-position: 50% 100%;
+    //         background: linear-gradient(120deg, #7927d0, #357cf7);
+    //     }
+
+        
+    //     100%{
+    //         background-position: 0% 50%;
+    //         background: linear-gradient(120deg, #330367, #033283);
+    //     }
+    // }
+
 
     .hero-content{
         width: 100%;
@@ -26,7 +55,18 @@
         color: #ffffff;
         margin-top: 22px;
         margin-left: 15px;
-        
+
+        h2{
+            cursor: pointer;
+        }
+        .p, h2:hover{
+            color: rgb(212, 209, 209);
+        }
+        .p{
+            max-height: 22px;
+            overflow: hidden;
+            cursor: pointer;
+        }
 
         button{
             margin-top: 14px;

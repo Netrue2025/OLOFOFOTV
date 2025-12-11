@@ -74,6 +74,7 @@
   border-right: none;
   border-left: none;
   margin: 0 auto;
+  text-align: left;
 }
 .footer-container .footer-inset-container .others .others-details {
   width: 100%;
@@ -93,4 +94,8 @@
 }
 .footer-container .footer-inset-container .others .others-details .terms-privacy-cookies span {
   margin-left: 16px;
+}
+.footer-container .footer-inset-container .others .others-details p {
+  text-align: center;
+  margin-left: 22px;
 }/*# sourceMappingURL=footer.css.map */

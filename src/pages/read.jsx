@@ -8,10 +8,41 @@ import "../styles/read.css";
 import { Footer } from "../components/footer"
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import DOMPurify from "dompurify";
+import { useNavigate } from "react-router-dom"
+import { useState, useEffect } from "react"
+
 
 export function Read(){
     const location = useLocation()
     console.log(location)
+
+    const navigate = useNavigate();
+    const [backend, setBackend] = useState("");
+
+    useEffect(()=>{
+      fetch("https://abiwrite.com/db/all.php")
+      .then((response)=>{
+          if(!response.ok){
+              throw new Error("Server lost. check your server connection")
+          }
+          return response.json();
+      })
+      .then((data)=>{
+           const randomdata = data.sort(()=>Math.random() - 1)
+          setBackend(randomdata)
+          console.log(data.heading)
+          setLoading(false)
+          
+      })
+      .catch((error)=>{
+          // setError(error.Messages)
+          setLoading(false)
+      })
+    
+    }, [])
+    const alldata = Array.from(backend)
+   
     return(
         <div>
             <section className="readContainer">
@@ -34,7 +65,6 @@ export function Read(){
                         <div className="profileCon">
                             <img src="/sport1.jpg" alt="Profile picture" />
                             <h3>{location.state.postedby}</h3>
-
                         </div>
                         <span>{location.state.date}</span>
                     </div>
@@ -42,9 +72,7 @@ export function Read(){
             </section>
 
             <section className="readContainer">
-                <p>
-                   {location.state.body}
-                </p>
+                <p id="p" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(location.state.body)}} />
             </section>
 
             <section className="readContainer">
@@ -60,16 +88,18 @@ export function Read(){
             <section className="readContainer">
                 <div className="youMightLikeThis">
                     <h2>You might also like</h2>
-                    <div className="otherBlog">
-                        <figure>
-                            <img src="/sport2.jpg" alt="" />
-                        </figure>
-                        <div className="otheBloContent">
-                            <p>Technology</p>
-                            <h2>The Rise of Quantum Computing</h2>
+                    {alldata.slice(0, 10).map((all, index)=>(
+                        <div className="otherBlog" key={index} onClick={()=>navigate('/Read', {replace: true, state:(all)})}>
+                            <figure>
+                               <img src={`https://abiwrite.com/admin/images/${all.image}`} alt="person playing basket ball" />
+                            </figure>
+                            <div className="otheBloContent">
+                            <p>{all.categories}</p>
+                                <h2>{all.heading}</h2>
+                            </div>
                         </div>
-                    </div>
-                    <div className="otherBlog">
+                    ))}
+                    {/* <div className="otherBlog">
                         <figure>
                             <img src="/sport1.jpg" alt="" />
                         </figure>
@@ -77,7 +107,7 @@ export function Read(){
                             <p>Technology</p>
                             <h2>The Rise of Quantum Computing</h2>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="comments">
 

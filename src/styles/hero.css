@@ -1,21 +1,27 @@
 .heroContainer {
   width: 90dvw;
-  margin: 0 auto;
+  margin: 22px auto;
   padding: 0;
-  padding-bottom: 22px;
+  height: auto;
   background-color: #161616;
   border-radius: 12px;
 }
-.heroContainer figure {
+.heroContainer .figure {
   width: 100%;
-  max-height: 90vh;
-  margin: 0 auto;
+  height: auto;
+  max-height: 50dvh;
+  margin: auto;
+  display: flex;
+  background: linear-gradient(120deg, #17141d, #071732);
+  animation: gradientMove 4s ease infinite;
 }
-.heroContainer figure img {
-  width: 100%;
-  max-height: 90vh;
+.heroContainer .figure img {
+  width: auto;
+  max-width: 90dvw;
+  max-height: 50dvh;
   border-radius: 10px;
-  margin: 0;
+  margin: auto;
+  opacity: 0.8;
 }
 .heroContainer .hero-content {
   width: 100%;
@@ -24,6 +30,17 @@
   color: #ffffff;
   margin-top: 22px;
   margin-left: 15px;
+}
+.heroContainer .hero-content h2 {
+  cursor: pointer;
+}
+.heroContainer .hero-content .p, .heroContainer .hero-content h2:hover {
+  color: rgb(212, 209, 209);
+}
+.heroContainer .hero-content .p {
+  max-height: 22px;
+  overflow: hidden;
+  cursor: pointer;
 }
 .heroContainer .hero-content button {
   margin-top: 14px;

@@ -5,7 +5,6 @@ import { useState, useEffect } from "react"
 export function Sport(){
     const [loading, setLoading] = useState(true)
     const [backend, setBackend] = useState("");
-    const [testing, setTesting] = useState('Welcome Jeremiah')
     const navigate = useNavigate();
 
     useEffect(()=>{

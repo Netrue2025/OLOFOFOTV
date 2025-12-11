@@ -11,8 +11,8 @@ export function Home() {
             <Topnavbar />
             <Hero />
             <Sport />
-            <TravelAndTourism />
             <News />
+            <TravelAndTourism />
             <Blog />
             <Footer />
         </div>

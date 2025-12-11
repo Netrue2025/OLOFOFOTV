@@ -1,6 +1,7 @@
 .blogContainer {
   width: 90dvw;
-  margin: auto;
+  margin: 0 auto;
+  position: relative;
 }
 .blogContainer article {
   display: flex;
@@ -28,10 +29,14 @@
 }
 .blogContainer article .articleContent h2 {
   color: #ffffff;
+  max-height: 55px;
+  overflow: hidden;
+  line-height: 1.08;
 }
 .blogContainer article .articleContent p {
   max-height: 25px;
   overflow: hidden;
+  margin-top: 3px;
 }
 .blogContainer article .articleContent span {
   word-spacing: 2px;
