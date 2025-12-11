@@ -1,0 +1,38 @@
+.travelAndTourismContainer {
+  max-width: 90dvw;
+  height: auto;
+  padding: 55px 0;
+}
+.travelAndTourismContainer .travelTitle {
+  max-width: 100%;
+  display: flex;
+  margin-left: 2.5%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.travelAndTourismContainer .travelTitle h2 {
+  color: #fff;
+}
+.travelAndTourismContainer .travelCards {
+  max-width: 100%;
+  display: flex;
+  margin-top: 22px;
+}
+.travelAndTourismContainer .travelCards .card {
+  max-width: 186px;
+  height: 312px;
+  margin: 0 10px;
+}
+.travelAndTourismContainer .travelCards .card img {
+  max-width: 186px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.travelAndTourismContainer .travelCards .card h2 {
+  width: 100%;
+  color: #ffffff;
+}
+.travelAndTourismContainer .travelCards .card p {
+  color: gray;
+}/*# sourceMappingURL=travel.css.map */

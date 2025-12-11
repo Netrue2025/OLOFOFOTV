@@ -1,0 +1,45 @@
+.travelAndTourismContainer {
+  max-width: 90dvw;
+  height: auto;
+  padding: 55px 0;
+
+  .travelTitle {
+    max-width: 100%;
+    display: flex;
+    margin-left: 2.5%;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    h2 {
+      color: #fff;
+    }
+  }
+
+  .travelCards {
+    max-width: 100%;
+    display: flex;
+    margin-top: 22px;
+
+    .card {
+      max-width: 186px;
+      height: 312px;
+      margin: 0 10px;
+
+      img {
+        max-width: 186px;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      h2 {
+        width: 100%;
+        color: #ffffff;
+      }
+
+      p {
+        color: gray;
+      }
+    }
+  }
+}
